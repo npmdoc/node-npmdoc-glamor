@@ -1,0 +1,3657 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/threepointone/glamor"
+
+    >glamor (v2.20.24)</a>
+</h1>
+<h4>inline css for component systems</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor">module glamor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor._default">
+            function <span class="apidocSignatureSpan">glamor.</span>_default
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.active">
+            function <span class="apidocSignatureSpan">glamor.</span>active
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.after">
+            function <span class="apidocSignatureSpan">glamor.</span>after
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.any">
+            function <span class="apidocSignatureSpan">glamor.</span>any
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.attribsFor">
+            function <span class="apidocSignatureSpan">glamor.</span>attribsFor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.backdrop">
+            function <span class="apidocSignatureSpan">glamor.</span>backdrop
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.before">
+            function <span class="apidocSignatureSpan">glamor.</span>before
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.checked">
+            function <span class="apidocSignatureSpan">glamor.</span>checked
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.compose">
+            function <span class="apidocSignatureSpan">glamor.</span>compose
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.css">
+            function <span class="apidocSignatureSpan">glamor.</span>css
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.cssFor">
+            function <span class="apidocSignatureSpan">glamor.</span>cssFor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.cssLabels">
+            function <span class="apidocSignatureSpan">glamor.</span>cssLabels
+            <span class="apidocSignatureSpan">(bool)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.dir">
+            function <span class="apidocSignatureSpan">glamor.</span>dir
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.disabled">
+            function <span class="apidocSignatureSpan">glamor.</span>disabled
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.empty">
+            function <span class="apidocSignatureSpan">glamor.</span>empty
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.enabled">
+            function <span class="apidocSignatureSpan">glamor.</span>enabled
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.first">
+            function <span class="apidocSignatureSpan">glamor.</span>first
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.firstChild">
+            function <span class="apidocSignatureSpan">glamor.</span>firstChild
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.firstLetter">
+            function <span class="apidocSignatureSpan">glamor.</span>firstLetter
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.firstLine">
+            function <span class="apidocSignatureSpan">glamor.</span>firstLine
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.firstOfType">
+            function <span class="apidocSignatureSpan">glamor.</span>firstOfType
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.flush">
+            function <span class="apidocSignatureSpan">glamor.</span>flush
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.focus">
+            function <span class="apidocSignatureSpan">glamor.</span>focus
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.fontFace">
+            function <span class="apidocSignatureSpan">glamor.</span>fontFace
+            <span class="apidocSignatureSpan">(font)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.fullscreen">
+            function <span class="apidocSignatureSpan">glamor.</span>fullscreen
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.hover">
+            function <span class="apidocSignatureSpan">glamor.</span>hover
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.idFor">
+            function <span class="apidocSignatureSpan">glamor.</span>idFor
+            <span class="apidocSignatureSpan">(rule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.inRange">
+            function <span class="apidocSignatureSpan">glamor.</span>inRange
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.indeterminate">
+            function <span class="apidocSignatureSpan">glamor.</span>indeterminate
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.insertGlobal">
+            function <span class="apidocSignatureSpan">glamor.</span>insertGlobal
+            <span class="apidocSignatureSpan">(selector, style)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.insertRule">
+            function <span class="apidocSignatureSpan">glamor.</span>insertRule
+            <span class="apidocSignatureSpan">(css)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.invalid">
+            function <span class="apidocSignatureSpan">glamor.</span>invalid
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.isLikeRule">
+            function <span class="apidocSignatureSpan">glamor.</span>isLikeRule
+            <span class="apidocSignatureSpan">(rule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.keyframes">
+            function <span class="apidocSignatureSpan">glamor.</span>keyframes
+            <span class="apidocSignatureSpan">(name, kfs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.lang">
+            function <span class="apidocSignatureSpan">glamor.</span>lang
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.lastChild">
+            function <span class="apidocSignatureSpan">glamor.</span>lastChild
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.lastOfType">
+            function <span class="apidocSignatureSpan">glamor.</span>lastOfType
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.left">
+            function <span class="apidocSignatureSpan">glamor.</span>left
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.link">
+            function <span class="apidocSignatureSpan">glamor.</span>link
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.media">
+            function <span class="apidocSignatureSpan">glamor.</span>media
+            <span class="apidocSignatureSpan">(query)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.merge">
+            function <span class="apidocSignatureSpan">glamor.</span>merge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.not">
+            function <span class="apidocSignatureSpan">glamor.</span>not
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.nthChild">
+            function <span class="apidocSignatureSpan">glamor.</span>nthChild
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.nthLastChild">
+            function <span class="apidocSignatureSpan">glamor.</span>nthLastChild
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.nthLastOfType">
+            function <span class="apidocSignatureSpan">glamor.</span>nthLastOfType
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.nthOfType">
+            function <span class="apidocSignatureSpan">glamor.</span>nthOfType
+            <span class="apidocSignatureSpan">(p, x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.onlyChild">
+            function <span class="apidocSignatureSpan">glamor.</span>onlyChild
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.onlyOfType">
+            function <span class="apidocSignatureSpan">glamor.</span>onlyOfType
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.optional">
+            function <span class="apidocSignatureSpan">glamor.</span>optional
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.outOfRange">
+            function <span class="apidocSignatureSpan">glamor.</span>outOfRange
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.parent">
+            function <span class="apidocSignatureSpan">glamor.</span>parent
+            <span class="apidocSignatureSpan">(selector)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.placeholder">
+            function <span class="apidocSignatureSpan">glamor.</span>placeholder
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.pseudo">
+            function <span class="apidocSignatureSpan">glamor.</span>pseudo
+            <span class="apidocSignatureSpan">(selector)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.readOnly">
+            function <span class="apidocSignatureSpan">glamor.</span>readOnly
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.readWrite">
+            function <span class="apidocSignatureSpan">glamor.</span>readWrite
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.rehydrate">
+            function <span class="apidocSignatureSpan">glamor.</span>rehydrate
+            <span class="apidocSignatureSpan">(ids)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.required">
+            function <span class="apidocSignatureSpan">glamor.</span>required
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.right">
+            function <span class="apidocSignatureSpan">glamor.</span>right
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.root">
+            function <span class="apidocSignatureSpan">glamor.</span>root
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.scope">
+            function <span class="apidocSignatureSpan">glamor.</span>scope
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.select">
+            function <span class="apidocSignatureSpan">glamor.</span>select
+            <span class="apidocSignatureSpan">(selector)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.selection">
+            function <span class="apidocSignatureSpan">glamor.</span>selection
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.simulate">
+            function <span class="apidocSignatureSpan">glamor.</span>simulate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.simulations">
+            function <span class="apidocSignatureSpan">glamor.</span>simulations
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.speedy">
+            function <span class="apidocSignatureSpan">glamor.</span>speedy
+            <span class="apidocSignatureSpan">(bool)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style">
+            function <span class="apidocSignatureSpan">glamor.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.target">
+            function <span class="apidocSignatureSpan">glamor.</span>target
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.valid">
+            function <span class="apidocSignatureSpan">glamor.</span>valid
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.visited">
+            function <span class="apidocSignatureSpan">glamor.</span>visited
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>aphrodite</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>ous</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>plugins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>presets</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>server</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>spec</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>styleSheet</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.aphrodite">module glamor.aphrodite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.aphrodite.css">
+            function <span class="apidocSignatureSpan">glamor.aphrodite.</span>css
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.aphrodite.</span>StyleSheet</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.ous">module glamor.ous</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.ous.columns">
+            function <span class="apidocSignatureSpan">glamor.ous.</span>columns
+            <span class="apidocSignatureSpan">(n, offset)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.ous.half">
+            function <span class="apidocSignatureSpan">glamor.ous.</span>half
+            <span class="apidocSignatureSpan">(offset)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.ous.oneThird">
+            function <span class="apidocSignatureSpan">glamor.ous.</span>oneThird
+            <span class="apidocSignatureSpan">(offset)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.ous.twoThirds">
+            function <span class="apidocSignatureSpan">glamor.ous.</span>twoThirds
+            <span class="apidocSignatureSpan">(offset)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>base</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>button</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>clearfix</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>container</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>fullWidth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>labelBody</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>maxFullWidth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>primary</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>pullLeft</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>pullRight</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">glamor.ous.</span>row</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.server">module glamor.server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.server.renderStatic">
+            function <span class="apidocSignatureSpan">glamor.server.</span>renderStatic
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.server.renderStaticOptimized">
+            function <span class="apidocSignatureSpan">glamor.server.</span>renderStaticOptimized
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.spec">module glamor.spec</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.spec.SyntaxError">
+            function <span class="apidocSignatureSpan">glamor.spec.</span>SyntaxError
+            <span class="apidocSignatureSpan">(message, expected, found, location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.spec.parse">
+            function <span class="apidocSignatureSpan">glamor.spec.</span>parse
+            <span class="apidocSignatureSpan">(input, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.style">module glamor.style</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style.style">
+            function <span class="apidocSignatureSpan">glamor.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style.fontFace">
+            function <span class="apidocSignatureSpan">glamor.style.</span>fontFace
+            <span class="apidocSignatureSpan">(font)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style.global">
+            function <span class="apidocSignatureSpan">glamor.style.</span>global
+            <span class="apidocSignatureSpan">(selector, style)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style.insert">
+            function <span class="apidocSignatureSpan">glamor.style.</span>insert
+            <span class="apidocSignatureSpan">(css)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.style.keyframes">
+            function <span class="apidocSignatureSpan">glamor.style.</span>keyframes
+            <span class="apidocSignatureSpan">(name, kfs)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.glamor.utils">module glamor.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.aspectRatio">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>aspectRatio
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderBottomRadius">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderBottomRadius
+            <span class="apidocSignatureSpan">(r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderColor">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderColor
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderLeftRadius">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderLeftRadius
+            <span class="apidocSignatureSpan">(r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderRightRadius">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderRightRadius
+            <span class="apidocSignatureSpan">(r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderStyle">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderStyle
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderTopRadius">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderTopRadius
+            <span class="apidocSignatureSpan">(r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.borderWidth">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>borderWidth
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.center">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>center
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.centerBlock">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>centerBlock
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.circle">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>circle
+            <span class="apidocSignatureSpan">(radius)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.clearfix">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>clearfix
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.hideVisually">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>hideVisually
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.hr">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>hr
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.margin">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>margin
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.noHover">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>noHover
+            <span class="apidocSignatureSpan">(childSelector, style)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.noJs">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>noJs
+            <span class="apidocSignatureSpan">(childSelector, style)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.padding">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>padding
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.position">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>position
+            <span class="apidocSignatureSpan">(type, _ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.resetList">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>resetList
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.resetText">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>resetText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.size">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>size
+            <span class="apidocSignatureSpan">(width)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.textHide">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>textHide
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.triangle">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>triangle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.truncate">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>truncate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.glamor.utils.wordWrap">
+            function <span class="apidocSignatureSpan">glamor.utils.</span>wordWrap
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor" id="apidoc.module.glamor">module glamor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor._default" id="apidoc.element.glamor._default">
+        function <span class="apidocSignatureSpan">glamor.</span>_default
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _default(x) {
+  return pseudo(&#x27;:default&#x27;, x); // note &#x27;_default&#x27; name
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.active" id="apidoc.element.glamor.active">
+        function <span class="apidocSignatureSpan">glamor.</span>active
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function active(x) {
+  return pseudo(&#x27;:active&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.after" id="apidoc.element.glamor.after">
+        function <span class="apidocSignatureSpan">glamor.</span>after
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function after(x) {
+  return pseudo(&#x27;::after&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.any" id="apidoc.element.glamor.any">
+        function <span class="apidocSignatureSpan">glamor.</span>any
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function any(x) {
+  return pseudo(&#x27;:any&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.attribsFor" id="apidoc.element.glamor.attribsFor">
+        function <span class="apidocSignatureSpan">glamor.</span>attribsFor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attribsFor() {
+  for (var _len9 = arguments.length, rules = Array(_len9), _key9 = 0; _key9 &#x3c; _len9; _key9++) {
+    rules[_key9] = arguments[_key9];
+  }
+
+  rules = (0, _clean2.default)(rules);
+  var htmlAttributes = rules ? rules.map(function (rule) {
+    idFor(rule); // throwaway check for rule
+    var key = Object.keys(rule)[0],
+        value = rule[key];
+    return key + &#x27;=&#x22;&#x27; + (value || &#x27;&#x27;) + &#x27;&#x22;&#x27;;
+  }).join(&#x27; &#x27;) : &#x27;&#x27;;
+
+  return htmlAttributes;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.backdrop" id="apidoc.element.glamor.backdrop">
+        function <span class="apidocSignatureSpan">glamor.</span>backdrop
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function backdrop(x) {
+  return pseudo(&#x27;::backdrop&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.before" id="apidoc.element.glamor.before">
+        function <span class="apidocSignatureSpan">glamor.</span>before
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function before(x) {
+  return pseudo(&#x27;::before&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.checked" id="apidoc.element.glamor.checked">
+        function <span class="apidocSignatureSpan">glamor.</span>checked
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checked(x) {
+  return pseudo(&#x27;:checked&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.compose" id="apidoc.element.glamor.compose">
+        function <span class="apidocSignatureSpan">glamor.</span>compose
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len3 = arguments.length, rules = Array(_len3), _key3 = 0; _key3 &#x3c; _len3; _key3++) {
+    rules[_key3] = arguments[_key3];
+  }
+
+  if (rules[0] &#x26;&#x26; rules[0].length &#x26;&#x26; rules[0].raw) {
+    throw new Error(&#x27;you forgot to include glamor/babel in your babel plugins.&#x27;);
+  }
+
+  rules = (0, _clean2.default)(rules);
+  if (!rules) {
+    return nullrule;
+  }
+
+  return cachedCss(rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.css" id="apidoc.element.glamor.css">
+        function <span class="apidocSignatureSpan">glamor.</span>css
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len3 = arguments.length, rules = Array(_len3), _key3 = 0; _key3 &#x3c; _len3; _key3++) {
+    rules[_key3] = arguments[_key3];
+  }
+
+  if (rules[0] &#x26;&#x26; rules[0].length &#x26;&#x26; rules[0].raw) {
+    throw new Error(&#x27;you forgot to include glamor/babel in your babel plugins.&#x27;);
+  }
+
+  rules = (0, _clean2.default)(rules);
+  if (!rules) {
+    return nullrule;
+  }
+
+  return cachedCss(rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  fontFamily: &#x27;monospace&#x27;
+})
+
+let bolder = css({
+  fontWeight: &#x27;bolder&#x27;
+})
+
+&#x3c;div {...<span class="apidocCodeKeywordSpan">css</span>(mono, bolder)}&#x3e;
+  bold code!
+&#x3c;/div&#x3e;
+
+```
+
+motivation
+---
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.cssFor" id="apidoc.element.glamor.cssFor">
+        function <span class="apidocSignatureSpan">glamor.</span>cssFor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cssFor() {
+  for (var _len8 = arguments.length, rules = Array(_len8), _key8 = 0; _key8 &#x3c; _len8; _key8++) {
+    rules[_key8] = arguments[_key8];
+  }
+
+  rules = (0, _clean2.default)(rules);
+  return rules ? rules.map(function (r) {
+    var style = { label: [] };
+    build(style, { src: r }); // mutative! but worth it.
+    return deconstructedStyleToCSS(hashify(style), deconstruct(style)).join(&#x27;&#x27;);
+  }).join(&#x27;&#x27;) : &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.cssLabels" id="apidoc.element.glamor.cssLabels">
+        function <span class="apidocSignatureSpan">glamor.</span>cssLabels
+        <span class="apidocSignatureSpan">(bool)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cssLabels(bool) {
+  hasLabels = !!bool;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.dir" id="apidoc.element.glamor.dir">
+        function <span class="apidocSignatureSpan">glamor.</span>dir
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function dir(p, x) {
+  return pseudo(&#x27;:dir(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.disabled" id="apidoc.element.glamor.disabled">
+        function <span class="apidocSignatureSpan">glamor.</span>disabled
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function disabled(x) {
+  return pseudo(&#x27;:disabled&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.empty" id="apidoc.element.glamor.empty">
+        function <span class="apidocSignatureSpan">glamor.</span>empty
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function empty(x) {
+  return pseudo(&#x27;:empty&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.enabled" id="apidoc.element.glamor.enabled">
+        function <span class="apidocSignatureSpan">glamor.</span>enabled
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function enabled(x) {
+  return pseudo(&#x27;:enabled&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.first" id="apidoc.element.glamor.first">
+        function <span class="apidocSignatureSpan">glamor.</span>first
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function first(x) {
+  return pseudo(&#x27;:first&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.firstChild" id="apidoc.element.glamor.firstChild">
+        function <span class="apidocSignatureSpan">glamor.</span>firstChild
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function firstChild(x) {
+  return pseudo(&#x27;:first-child&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.firstLetter" id="apidoc.element.glamor.firstLetter">
+        function <span class="apidocSignatureSpan">glamor.</span>firstLetter
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function firstLetter(x) {
+  return pseudo(&#x27;::first-letter&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.firstLine" id="apidoc.element.glamor.firstLine">
+        function <span class="apidocSignatureSpan">glamor.</span>firstLine
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function firstLine(x) {
+  return pseudo(&#x27;::first-line&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.firstOfType" id="apidoc.element.glamor.firstOfType">
+        function <span class="apidocSignatureSpan">glamor.</span>firstOfType
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function firstOfType(x) {
+  return pseudo(&#x27;:first-of-type&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.flush" id="apidoc.element.glamor.flush">
+        function <span class="apidocSignatureSpan">glamor.</span>flush
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flush() {
+  inserted = styleSheet.inserted = {};
+  registered = styleSheet.registered = {};
+  ruleCache = {};
+  styleSheet.flush();
+  styleSheet.inject();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+styleSheet.inject()
+- &#x27;injects&#x27; the stylesheet into the page (or into memory if on server)
+
+styleSheet.insert(&#x27;#box { border: 1px solid red; }&#x27;)
+- appends a css rule into the stylesheet
+
+styleSheet.<span class="apidocCodeKeywordSpan">flush</span>()
+- empties the stylesheet of all its contents
+
+
+*/
+
+function last(arr) {
+return arr[arr.length - 1];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.focus" id="apidoc.element.glamor.focus">
+        function <span class="apidocSignatureSpan">glamor.</span>focus
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function focus(x) {
+  return pseudo(&#x27;:focus&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.fontFace" id="apidoc.element.glamor.fontFace">
+        function <span class="apidocSignatureSpan">glamor.</span>fontFace
+        <span class="apidocSignatureSpan">(font)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fontFace = function (font) {
+  font = (0, _clean2.default)(font);
+  var spec = {
+    id: hashify(font),
+    type: &#x27;font-face&#x27;,
+    font: font
+  };
+  register(spec);
+  insertFontFace(spec);
+
+  return font.fontFamily;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.fullscreen" id="apidoc.element.glamor.fullscreen">
+        function <span class="apidocSignatureSpan">glamor.</span>fullscreen
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fullscreen(x) {
+  return pseudo(&#x27;:fullscreen&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.hover" id="apidoc.element.glamor.hover">
+        function <span class="apidocSignatureSpan">glamor.</span>hover
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hover(x) {
+  return pseudo(&#x27;:hover&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.idFor" id="apidoc.element.glamor.idFor">
+        function <span class="apidocSignatureSpan">glamor.</span>idFor
+        <span class="apidocSignatureSpan">(rule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function idFor(rule) {
+  var keys = Object.keys(rule).filter(function (x) {
+    return x !== &#x27;toString&#x27;;
+  });
+  if (keys.length !== 1) throw new Error(&#x27;not a rule&#x27;);
+  var regex = /data\-css\-([a-zA-Z0-9]+)/;
+  var match = regex.exec(keys[0]);
+  if (!match) throw new Error(&#x27;not a rule&#x27;);
+  return match[1];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.inRange" id="apidoc.element.glamor.inRange">
+        function <span class="apidocSignatureSpan">glamor.</span>inRange
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function inRange(x) {
+  return pseudo(&#x27;:in-range&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.indeterminate" id="apidoc.element.glamor.indeterminate">
+        function <span class="apidocSignatureSpan">glamor.</span>indeterminate
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function indeterminate(x) {
+  return pseudo(&#x27;:indeterminate&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.insertGlobal" id="apidoc.element.glamor.insertGlobal">
+        function <span class="apidocSignatureSpan">glamor.</span>insertGlobal
+        <span class="apidocSignatureSpan">(selector, style)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">insertGlobal = function (selector, style) {
+  return css.insert(toCSS({ selector: selector, style: style }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.insertRule" id="apidoc.element.glamor.insertRule">
+        function <span class="apidocSignatureSpan">glamor.</span>insertRule
+        <span class="apidocSignatureSpan">(css)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">insertRule = function (css) {
+  var spec = {
+    id: hashify(css),
+    css: css,
+    type: &#x27;raw&#x27;
+  };
+  register(spec);
+  if (!inserted[spec.id]) {
+    styleSheet.insert(spec.css);
+    inserted[spec.id] = true;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.isSpeedy = !!bool;
+},
+_insert: function _insert(rule) {
+  // this weirdness for perf, and chrome&#x27;s weird bug
+  // https://stackoverflow.com/questions/20007992/chrome-suddenly-stopped-accepting-insertrule
+  try {
+    var sheet = this.getSheet();
+    sheet.<span class="apidocCodeKeywordSpan">insertRule</span>(rule, rule.indexOf(&#x27;@import&#x27;) !== -1 ? 0 : sheet.cssRules
+.length);
+  } catch (e) {
+    if (isDev) {
+      // might need beter dx for this
+      console.warn(&#x27;whoops, illegal rule inserted&#x27;, rule); //eslint-disable-line no-console
+    }
+  }
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.invalid" id="apidoc.element.glamor.invalid">
+        function <span class="apidocSignatureSpan">glamor.</span>invalid
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function invalid(x) {
+  return pseudo(&#x27;:invalid&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.isLikeRule" id="apidoc.element.glamor.isLikeRule">
+        function <span class="apidocSignatureSpan">glamor.</span>isLikeRule
+        <span class="apidocSignatureSpan">(rule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLikeRule(rule) {
+  var keys = Object.keys(rule).filter(function (x) {
+    return x !== &#x27;toString&#x27;;
+  });
+  if (keys.length !== 1) {
+    return false;
+  }
+  return !!/data\-css\-([a-zA-Z0-9]+)/.exec(keys[0]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.keyframes" id="apidoc.element.glamor.keyframes">
+        function <span class="apidocSignatureSpan">glamor.</span>keyframes
+        <span class="apidocSignatureSpan">(name, kfs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyframes = function (name, kfs) {
+  if (!kfs) {
+    kfs = name, name = &#x27;animation&#x27;;
+  }
+
+  // do not ignore empty keyframe definitions for now.
+  kfs = (0, _clean2.default)(kfs) || {};
+  var spec = {
+    id: hashify(name, kfs),
+    type: &#x27;keyframes&#x27;,
+    name: name,
+    keyframes: kfs
+  };
+  register(spec);
+  insertKeyframe(spec);
+  return name + &#x27;_&#x27; + spec.id;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.lang" id="apidoc.element.glamor.lang">
+        function <span class="apidocSignatureSpan">glamor.</span>lang
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lang(p, x) {
+  return pseudo(&#x27;:lang(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.lastChild" id="apidoc.element.glamor.lastChild">
+        function <span class="apidocSignatureSpan">glamor.</span>lastChild
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lastChild(x) {
+  return pseudo(&#x27;:last-child&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.lastOfType" id="apidoc.element.glamor.lastOfType">
+        function <span class="apidocSignatureSpan">glamor.</span>lastOfType
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lastOfType(x) {
+  return pseudo(&#x27;:last-of-type&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.left" id="apidoc.element.glamor.left">
+        function <span class="apidocSignatureSpan">glamor.</span>left
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function left(x) {
+  return pseudo(&#x27;:left&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.link" id="apidoc.element.glamor.link">
+        function <span class="apidocSignatureSpan">glamor.</span>link
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function link(x) {
+  return pseudo(&#x27;:link&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.media" id="apidoc.element.glamor.media">
+        function <span class="apidocSignatureSpan">glamor.</span>media
+        <span class="apidocSignatureSpan">(query)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function media(query) {
+  for (var _len6 = arguments.length, rules = Array(_len6 &#x3e; 1 ? _len6 - 1 : 0), _key6 = 1; _key6 &#x3c; _len6; _key6++) {
+    rules[_key6 - 1] = arguments[_key6];
+  }
+
+  return css(_defineProperty({}, &#x27;@media &#x27; + query, rules));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.merge" id="apidoc.element.glamor.merge">
+        function <span class="apidocSignatureSpan">glamor.</span>merge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len3 = arguments.length, rules = Array(_len3), _key3 = 0; _key3 &#x3c; _len3; _key3++) {
+    rules[_key3] = arguments[_key3];
+  }
+
+  if (rules[0] &#x26;&#x26; rules[0].length &#x26;&#x26; rules[0].raw) {
+    throw new Error(&#x27;you forgot to include glamor/babel in your babel plugins.&#x27;);
+  }
+
+  rules = (0, _clean2.default)(rules);
+  if (!rules) {
+    return nullrule;
+  }
+
+  return cachedCss(rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.not" id="apidoc.element.glamor.not">
+        function <span class="apidocSignatureSpan">glamor.</span>not
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function not(p, x) {
+  // should this be a plugin?
+  var selector = p.split(&#x27;,&#x27;).map(function (x) {
+    return x.trim();
+  }).map(function (x) {
+    return &#x27;:not(&#x27; + x + &#x27;)&#x27;;
+  });
+  if (selector.length === 1) {
+    return pseudo(&#x27;:not(&#x27; + p + &#x27;)&#x27;, x);
+  }
+  return select(selector.join(&#x27;&#x27;), x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.nthChild" id="apidoc.element.glamor.nthChild">
+        function <span class="apidocSignatureSpan">glamor.</span>nthChild
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function nthChild(p, x) {
+  return pseudo(&#x27;:nth-child(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.nthLastChild" id="apidoc.element.glamor.nthLastChild">
+        function <span class="apidocSignatureSpan">glamor.</span>nthLastChild
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function nthLastChild(p, x) {
+  return pseudo(&#x27;:nth-last-child(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.nthLastOfType" id="apidoc.element.glamor.nthLastOfType">
+        function <span class="apidocSignatureSpan">glamor.</span>nthLastOfType
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function nthLastOfType(p, x) {
+  return pseudo(&#x27;:nth-last-of-type(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.nthOfType" id="apidoc.element.glamor.nthOfType">
+        function <span class="apidocSignatureSpan">glamor.</span>nthOfType
+        <span class="apidocSignatureSpan">(p, x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function nthOfType(p, x) {
+  return pseudo(&#x27;:nth-of-type(&#x27; + p + &#x27;)&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.onlyChild" id="apidoc.element.glamor.onlyChild">
+        function <span class="apidocSignatureSpan">glamor.</span>onlyChild
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onlyChild(x) {
+  return pseudo(&#x27;:only-child&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.onlyOfType" id="apidoc.element.glamor.onlyOfType">
+        function <span class="apidocSignatureSpan">glamor.</span>onlyOfType
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onlyOfType(x) {
+  return pseudo(&#x27;:only-of-type&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.optional" id="apidoc.element.glamor.optional">
+        function <span class="apidocSignatureSpan">glamor.</span>optional
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function optional(x) {
+  return pseudo(&#x27;:optional&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.outOfRange" id="apidoc.element.glamor.outOfRange">
+        function <span class="apidocSignatureSpan">glamor.</span>outOfRange
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function outOfRange(x) {
+  return pseudo(&#x27;:out-of-range&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.parent" id="apidoc.element.glamor.parent">
+        function <span class="apidocSignatureSpan">glamor.</span>parent
+        <span class="apidocSignatureSpan">(selector)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parent(selector) {
+  for (var _len5 = arguments.length, styles = Array(_len5 &#x3e; 1 ? _len5 - 1 : 0), _key5 = 1; _key5 &#x3c; _len5; _key5++) {
+    styles[_key5 - 1] = arguments[_key5];
+  }
+
+  return css(_defineProperty({}, selector + &#x27; &#x26;&#x27;, styles));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.placeholder" id="apidoc.element.glamor.placeholder">
+        function <span class="apidocSignatureSpan">glamor.</span>placeholder
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function placeholder(x) {
+  // https://github.com/threepointone/glamor/issues/14
+  return css({ &#x27;::placeholder&#x27;: x });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.pseudo" id="apidoc.element.glamor.pseudo">
+        function <span class="apidocSignatureSpan">glamor.</span>pseudo
+        <span class="apidocSignatureSpan">(selector)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pseudo(selector) {
+  for (var _len7 = arguments.length, styles = Array(_len7 &#x3e; 1 ? _len7 - 1 : 0), _key7 = 1; _key7 &#x3c; _len7; _key7++) {
+    styles[_key7 - 1] = arguments[_key7];
+  }
+
+  return css(_defineProperty({}, selector, styles));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.readOnly" id="apidoc.element.glamor.readOnly">
+        function <span class="apidocSignatureSpan">glamor.</span>readOnly
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function readOnly(x) {
+  return pseudo(&#x27;:read-only&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.readWrite" id="apidoc.element.glamor.readWrite">
+        function <span class="apidocSignatureSpan">glamor.</span>readWrite
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function readWrite(x) {
+  return pseudo(&#x27;:read-write&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.rehydrate" id="apidoc.element.glamor.rehydrate">
+        function <span class="apidocSignatureSpan">glamor.</span>rehydrate
+        <span class="apidocSignatureSpan">(ids)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rehydrate(ids) {
+  // load up ids
+  (0, _objectAssign2.default)(inserted, ids.reduce(function (o, i) {
+    return o[i] = true, o;
+  }, {}));
+  // assume css loaded separately
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.required" id="apidoc.element.glamor.required">
+        function <span class="apidocSignatureSpan">glamor.</span>required
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function required(x) {
+  return pseudo(&#x27;:required&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.right" id="apidoc.element.glamor.right">
+        function <span class="apidocSignatureSpan">glamor.</span>right
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function right(x) {
+  return pseudo(&#x27;:right&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.root" id="apidoc.element.glamor.root">
+        function <span class="apidocSignatureSpan">glamor.</span>root
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function root(x) {
+  return pseudo(&#x27;:root&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.scope" id="apidoc.element.glamor.scope">
+        function <span class="apidocSignatureSpan">glamor.</span>scope
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function scope(x) {
+  return pseudo(&#x27;:scope&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.select" id="apidoc.element.glamor.select">
+        function <span class="apidocSignatureSpan">glamor.</span>select
+        <span class="apidocSignatureSpan">(selector)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function select(selector) {
+  for (var _len4 = arguments.length, styles = Array(_len4 &#x3e; 1 ? _len4 - 1 : 0), _key4 = 1; _key4 &#x3c; _len4; _key4++) {
+    styles[_key4 - 1] = arguments[_key4];
+  }
+
+  if (!selector) {
+    return style(styles);
+  }
+  return css(_defineProperty({}, selector, styles));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.selection" id="apidoc.element.glamor.selection">
+        function <span class="apidocSignatureSpan">glamor.</span>selection
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function selection(x) {
+  return pseudo(&#x27;::selection&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.simulate" id="apidoc.element.glamor.simulate">
+        function <span class="apidocSignatureSpan">glamor.</span>simulate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function simulate() {
+  for (var _len = arguments.length, pseudos = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    pseudos[_key] = arguments[_key];
+  }
+
+  pseudos = (0, _clean2.default)(pseudos);
+  if (!pseudos) return {};
+  if (!canSimulate) {
+    if (!warned1) {
+      console.warn(&#x27;can\&#x27;t simulate without once calling simulations(true)&#x27;); //eslint-disable-line no-console
+      warned1 = true;
+    }
+    if (!isDev &#x26;&#x26; !isTest &#x26;&#x26; !warned2) {
+      console.warn(&#x27;don\&#x27;t use simulation outside dev&#x27;); //eslint-disable-line no-console
+      warned2 = true;
+    }
+    return {};
+  }
+  return pseudos.reduce(function (o, p) {
+    return o[&#x27;data-simulate-&#x27; + simple(p)] = &#x27;&#x27;, o;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.simulations" id="apidoc.element.glamor.simulations">
+        function <span class="apidocSignatureSpan">glamor.</span>simulations
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function simulations() {
+  var bool = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : true;
+
+  canSimulate = !!bool;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.speedy" id="apidoc.element.glamor.speedy">
+        function <span class="apidocSignatureSpan">glamor.</span>speedy
+        <span class="apidocSignatureSpan">(bool)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function speedy(bool) {
+  return styleSheet.speedy(bool);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style" id="apidoc.element.glamor.style">
+        function <span class="apidocSignatureSpan">glamor.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len3 = arguments.length, rules = Array(_len3), _key3 = 0; _key3 &#x3c; _len3; _key3++) {
+    rules[_key3] = arguments[_key3];
+  }
+
+  if (rules[0] &#x26;&#x26; rules[0].length &#x26;&#x26; rules[0].raw) {
+    throw new Error(&#x27;you forgot to include glamor/babel in your babel plugins.&#x27;);
+  }
+
+  rules = (0, _clean2.default)(rules);
+  if (!rules) {
+    return nullrule;
+  }
+
+  return cachedCss(rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.target" id="apidoc.element.glamor.target">
+        function <span class="apidocSignatureSpan">glamor.</span>target
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function target(x) {
+  return pseudo(&#x27;:target&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.valid" id="apidoc.element.glamor.valid">
+        function <span class="apidocSignatureSpan">glamor.</span>valid
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function valid(x) {
+  return pseudo(&#x27;:valid&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.visited" id="apidoc.element.glamor.visited">
+        function <span class="apidocSignatureSpan">glamor.</span>visited
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function visited(x) {
+  return pseudo(&#x27;:visited&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.aphrodite" id="apidoc.module.glamor.aphrodite">module glamor.aphrodite</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.aphrodite.css" id="apidoc.element.glamor.aphrodite.css">
+        function <span class="apidocSignatureSpan">glamor.aphrodite.</span>css
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len = arguments.length, rules = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    rules[_key] = arguments[_key];
+  }
+
+  return _index.style.apply(undefined, _toConsumableArray(rules.filter(function (x) {
+    return !!x;
+  }))); // aphrodite compat https://github.com/threepointone/glamor/issues/170
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  fontFamily: &#x27;monospace&#x27;
+})
+
+let bolder = css({
+  fontWeight: &#x27;bolder&#x27;
+})
+
+&#x3c;div {...<span class="apidocCodeKeywordSpan">css</span>(mono, bolder)}&#x3e;
+  bold code!
+&#x3c;/div&#x3e;
+
+```
+
+motivation
+---
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.ous" id="apidoc.module.glamor.ous">module glamor.ous</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.ous.columns" id="apidoc.element.glamor.ous.columns">
+        function <span class="apidocSignatureSpan">glamor.ous.</span>columns
+        <span class="apidocSignatureSpan">(n, offset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function columns(n, offset) {
+  return (0, _index.merge)({
+    width: &#x27;100%&#x27;,
+    float: &#x27;left&#x27;,
+    boxSizing: &#x27;border-box&#x27;
+  }, (0, _index.media)(&#x27;(min-width: 550px)&#x27;, {
+    marginLeft: &#x27;4%&#x27;
+  }, (0, _index.firstChild)({
+    marginLeft: 0
+  }), {
+    width: typeof n === &#x27;number&#x27; ? widths[n] : fractionalWidths[n]
+  }, n === 12 ? {
+    marginLeft: 0
+  } : {}, offset ? {
+    marginLeft: typeof n === &#x27;number&#x27; ? offsets[offset] : fractionalOffsets[offset]
+  } : {}));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.ous.half" id="apidoc.element.glamor.ous.half">
+        function <span class="apidocSignatureSpan">glamor.ous.</span>half
+        <span class="apidocSignatureSpan">(offset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function half(offset) {
+  return columns(&#x27;half&#x27;, offset);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.ous.oneThird" id="apidoc.element.glamor.ous.oneThird">
+        function <span class="apidocSignatureSpan">glamor.ous.</span>oneThird
+        <span class="apidocSignatureSpan">(offset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function oneThird(offset) {
+  return columns(&#x27;oneThird&#x27;, offset);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.ous.twoThirds" id="apidoc.element.glamor.ous.twoThirds">
+        function <span class="apidocSignatureSpan">glamor.ous.</span>twoThirds
+        <span class="apidocSignatureSpan">(offset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function twoThirds(offset) {
+  return columns(&#x27;twoThirds&#x27;, offset);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.server" id="apidoc.module.glamor.server">module glamor.server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.server.renderStatic" id="apidoc.element.glamor.server.renderStatic">
+        function <span class="apidocSignatureSpan">glamor.server.</span>renderStatic
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderStatic(fn) {
+  var html = fn();
+  if (html === undefined) {
+    throw new Error(&#x27;did you forget to return from renderToString?&#x27;);
+  }
+
+  var rules = _index.styleSheet.rules(),
+      css = rules.map(function (r) {
+    return r.cssText;
+  }).join(&#x27;&#x27;);
+  return { html: html, ids: Object.keys(_index.styleSheet.inserted), css: css, rules: rules };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.server.renderStaticOptimized" id="apidoc.element.glamor.server.renderStaticOptimized">
+        function <span class="apidocSignatureSpan">glamor.server.</span>renderStaticOptimized
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderStaticOptimized(fn) {
+  // parse out ids from html
+  // reconstruct css/rules/cache to pass
+  var html = fn();
+  if (html === undefined) {
+    throw new Error(&#x27;did you forget to return from renderToString?&#x27;);
+  }
+  var o = { html: html, ids: [], css: &#x27;&#x27;, rules: [] };
+  var regex = /css\-([a-zA-Z0-9]+)/gm;
+  var match = void 0,
+      ids = {};
+  while ((match = regex.exec(html)) !== null) {
+    if (!ids[match[1] + &#x27;&#x27;]) {
+      ids[match[1] + &#x27;&#x27;] = true;
+    }
+  }
+
+  o.rules = _index.styleSheet.rules().filter(function (x) {
+    var regex = /css\-([a-zA-Z0-9]+)/gm;
+    var match = regex.exec(x.cssText);
+    if (match &#x26;&#x26; ids[match[1] + &#x27;&#x27;]) {
+      return true;
+    }
+    if (!match) {
+      return true;
+    }
+    return false;
+  });
+  o.ids = Object.keys(_index.styleSheet.inserted).filter(function (id) {
+    return !!ids[id + &#x27;&#x27;] || _index.styleSheet.registered[id].type === &#x27;raw&#x27;;
+  });
+  o.css = o.rules.map(function (x) {
+    return x.cssText;
+  }).join(&#x27;&#x27;);
+
+  return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.spec" id="apidoc.module.glamor.spec">module glamor.spec</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.spec.SyntaxError" id="apidoc.element.glamor.spec.SyntaxError">
+        function <span class="apidocSignatureSpan">glamor.spec.</span>SyntaxError
+        <span class="apidocSignatureSpan">(message, expected, found, location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function peg$SyntaxError(message, expected, found, location) {
+  this.message = message;
+  this.expected = expected;
+  this.found = found;
+  this.location = location;
+  this.name = &#x22;SyntaxError&#x22;;
+
+  if (typeof Error.captureStackTrace === &#x22;function&#x22;) {
+    Error.captureStackTrace(this, peg$SyntaxError);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.spec.parse" id="apidoc.element.glamor.spec.parse">
+        function <span class="apidocSignatureSpan">glamor.spec.</span>parse
+        <span class="apidocSignatureSpan">(input, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function peg$parse(input, options) {
+  options = options !== void 0 ? options : {};
+
+  var peg$FAILED = {},
+      peg$startRuleFunctions = { start: peg$parsestart },
+      peg$startRuleFunction = peg$parsestart,
+      peg$c0 = function peg$c0(stylesheet) {
+    return stylesheet;
+  },
+      peg$c1 = function peg$c1(rules) {
+    return {
+      type: &#x27;StyleSheet&#x27;,
+      rules: extractList(rules, 0) };
+  },
+      peg$c2 = &#x22;;&#x22;,
+      peg$c3 = peg$literalExpectation(&#x22;;&#x22;, false),
+      peg$c4 = function peg$c4(dec) {
+    return dec;
+  },
+      peg$c5 = &#x22;{&#x22;,
+      peg$c6 = peg$literalExpectation(&#x22;{&#x22;, false),
+      peg$c7 = &#x22;}&#x22;,
+      peg$c8 = peg$literalExpectation(&#x22;}&#x22;, false),
+      peg$c9 = function peg$c9(media, rules) {
+    return {
+      type: &#x22;MediaRule&#x22;,
+      media: media,
+      rules: rules
+    };
+  },
+      peg$c10 = &#x22;,&#x22;,
+      peg$c11 = peg$literalExpectation(&#x22;,&#x22;, false),
+      peg$c12 = function peg$c12(head, tail) {
+    return buildList(head, tail, 2);
+  },
+      peg$c13 = &#x22;only&#x22;,
+      peg$c14 = peg$literalExpectation(&#x22;only&#x22;, false),
+      peg$c15 = &#x22;not&#x22;,
+      peg$c16 = peg$literalExpectation(&#x22;not&#x22;, false),
+      peg$c17 = &#x22;and&#x22;,
+      peg$c18 = peg$literalExpectation(&#x22;and&#x22;, false),
+      peg$c19 = function peg$c19(prefix, type, x) {
+    return x;
+  },
+      peg$c20 = function peg$c20(prefix, type, exprs) {
+    var _ref;
+
+    return _ref = {
+      type: &#x27;MediaQuery&#x27;,
+      prefix: prefix
+    }, _defineProperty(_ref, &#x22;type&#x22;, type), _defineProperty(_ref, &#x22;exprs&#x22;, exprs), _ref;
+  },
+      peg$c21 = function peg$c21(head, x) {
+    return x;
+  },
+      peg$c22 = function peg$c22(head, tail) {
+    return {
+      type: &#x27;MediaQuery&#x27;,
+      exprs: buildList(head, tail, 2)
+    };
+  },
+      peg$c23 = &#x22;(&#x22;,
+      peg$c24 = peg$literalExpectation(&#x22;(&#x22;, false),
+      peg$c25 = &#x22;:&#x22;,
+      peg$c26 = peg$literalExpectation(&#x22;:&#x22;, false),
+      peg$c27 = function peg$c27(feat, t) {
+    return t;
+  },
+      peg$c28 = &#x22;)&#x22;,
+      peg$c29 = peg$literalExpectation(&#x22;)&#x22;, false),
+      peg$c30 = function peg$c30(feat, t) {
+    return {
+      type: &#x27;MediaExpr&#x27;,
+      feature: feat,
+      value: t
+    };
+  },
+      peg$c31 = &#x22;/&#x22;,
+      peg$c32 = peg$literalExpectation(&#x22;/&#x22;, false),
+      peg$c33 = function peg$c33() {
+    return &#x22;/&#x22;;
+  },
+      peg$c34 = function peg$c34() {
+    return &#x22;,&#x22;;
+  },
+      peg$c35 = &#x22;+&#x22;,
+      peg$c36 = peg$literalExpectation(&#x22;+&#x22;, false),
+      peg$c37 = function peg$c37() {
+    return &#x22;+&#x22;;
+  },
+      peg$c38 = &#x22;&#x3e;&#x22;,
+      peg$c39 = peg$literalExpectation(&#x22;&#x3e;&#x22;, false),
+      peg$c40 = function peg$c40() {
+    return &#x22;&#x3e;&#x22;;
+  },
+      peg$c41 = function peg$c41(name) {
+    return name;
+  },
+      peg$c42 = function peg$c42(selectorsHead, selectorsTail, declarationsHead, declarationsTail) {
+
+    return {
+      type: &#x22;RuleSet&#x22;,
+      selectors: buildList(selectorsHead, selectorsTail, 2),
+      declarations: buildList(declarationsHead, declarationsTail, 2)
+    };
+  },
+      peg$c43 = function peg$c43(combinator, right) {
+    return {
+      type: &#x22;Selector&#x22;,
+      combinator: combinator,
+      left: { type: &#x27;Contextual&#x27; },
+      right: right
+    };
+  },
+      peg$c44 = function peg$c44(left, combinator, right) {
+    return {
+      type: &#x22;Selector&#x22;,
+      combinator: combinator,
+      left: left,
+      right: right
+    };
+  },
+      peg$c45 = function peg$c45(left, right) {
+    return {
+      type: &#x22;Selector&#x22;,
+      combinator: &#x22; &#x22;,
+      left: left,
+      right: right
+    };
+  },
+      peg$c46 = function peg$c46(selector) {
+    return selector;
+  },
+      peg$c47 = function peg$c47(inter) {
+    return inter;
+  },
+      peg$c48 = function peg$c48(element, qualifiers) {
+    return {
+      type: &#x22;SimpleSelector&#x22;,
+      element: element,
+      all: element === &#x27;*&#x27;,
+      qualifiers: qualifiers
+    };
+  },
+      peg$c49 = function peg$c49(qualifiers) {
+    return {
+      type: &#x22;SimpleSelector&#x22;,
+      element: &#x22;*&#x22;,
+      all: false,
+      qualifiers: qualifiers
+    };
+  },
+      peg$c50 = function peg$c50(stubsHead, stubsTail) {
+    return {
+      type: &#x22;Stubs&#x22;,
+      stubs: buildList(stubsHead, stubsTail, 2)
+    };
+  },
+      peg ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.style" id="apidoc.module.glamor.style">module glamor.style</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style.style" id="apidoc.element.glamor.style.style">
+        function <span class="apidocSignatureSpan">glamor.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function css() {
+  for (var _len3 = arguments.length, rules = Array(_len3), _key3 = 0; _key3 &#x3c; _len3; _key3++) {
+    rules[_key3] = arguments[_key3];
+  }
+
+  if (rules[0] &#x26;&#x26; rules[0].length &#x26;&#x26; rules[0].raw) {
+    throw new Error(&#x27;you forgot to include glamor/babel in your babel plugins.&#x27;);
+  }
+
+  rules = (0, _clean2.default)(rules);
+  if (!rules) {
+    return nullrule;
+  }
+
+  return cachedCss(rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style.fontFace" id="apidoc.element.glamor.style.fontFace">
+        function <span class="apidocSignatureSpan">glamor.style.</span>fontFace
+        <span class="apidocSignatureSpan">(font)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fontFace = function (font) {
+  font = (0, _clean2.default)(font);
+  var spec = {
+    id: hashify(font),
+    type: &#x27;font-face&#x27;,
+    font: font
+  };
+  register(spec);
+  insertFontFace(spec);
+
+  return font.fontFamily;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style.global" id="apidoc.element.glamor.style.global">
+        function <span class="apidocSignatureSpan">glamor.style.</span>global
+        <span class="apidocSignatureSpan">(selector, style)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">global = function (selector, style) {
+  return css.insert(toCSS({ selector: selector, style: style }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style.insert" id="apidoc.element.glamor.style.insert">
+        function <span class="apidocSignatureSpan">glamor.style.</span>insert
+        <span class="apidocSignatureSpan">(css)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">insert = function (css) {
+  var spec = {
+    id: hashify(css),
+    css: css,
+    type: &#x27;raw&#x27;
+  };
+  register(spec);
+  if (!inserted[spec.id]) {
+    styleSheet.insert(spec.css);
+    inserted[spec.id] = true;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+import StyleSheet from &#x27;glamor/lib/sheet&#x27;
+let styleSheet = new StyleSheet()
+
+styleSheet.inject()
+- &#x27;injects&#x27; the stylesheet into the page (or into memory if on server)
+
+styleSheet.<span class="apidocCodeKeywordSpan">insert</span>(&#x27;#box { border: 1px solid red; }&#x27;)
+- appends a css rule into the stylesheet
+
+styleSheet.flush()
+- empties the stylesheet of all its contents
+
+
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.style.keyframes" id="apidoc.element.glamor.style.keyframes">
+        function <span class="apidocSignatureSpan">glamor.style.</span>keyframes
+        <span class="apidocSignatureSpan">(name, kfs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyframes = function (name, kfs) {
+  if (!kfs) {
+    kfs = name, name = &#x27;animation&#x27;;
+  }
+
+  // do not ignore empty keyframe definitions for now.
+  kfs = (0, _clean2.default)(kfs) || {};
+  var spec = {
+    id: hashify(name, kfs),
+    type: &#x27;keyframes&#x27;,
+    name: name,
+    keyframes: kfs
+  };
+  register(spec);
+  insertKeyframe(spec);
+  return name + &#x27;_&#x27; + spec.id;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.glamor.utils" id="apidoc.module.glamor.utils">module glamor.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.aspectRatio" id="apidoc.element.glamor.utils.aspectRatio">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>aspectRatio
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function aspectRatio() {
+  var width = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : 16;
+  var height = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : 9;
+
+  return {
+    position: &#x27;relative&#x27;,
+    display: &#x27;block&#x27;,
+    height: 0,
+    padding: 0,
+    overflow: &#x27;hidden&#x27;,
+    paddingBottom: height / width * 100 + &#x27;%&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderBottomRadius" id="apidoc.element.glamor.utils.borderBottomRadius">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderBottomRadius
+        <span class="apidocSignatureSpan">(r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderBottomRadius(r) {
+  return {
+    borderBottomLeftRadius: r,
+    borderBottomRightRadius: r
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderColor" id="apidoc.element.glamor.utils.borderColor">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderColor
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderColor(x) {
+  return styleKeyed(&#x27;border&#x27;, &#x27;Color&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderLeftRadius" id="apidoc.element.glamor.utils.borderLeftRadius">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderLeftRadius
+        <span class="apidocSignatureSpan">(r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderLeftRadius(r) {
+  return {
+    borderTopLeftRadius: r,
+    borderBottomLeftRadius: r
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderRightRadius" id="apidoc.element.glamor.utils.borderRightRadius">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderRightRadius
+        <span class="apidocSignatureSpan">(r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderRightRadius(r) {
+
+  return {
+    borderTopRightRadius: r,
+    borderBottomRightRadius: r
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderStyle" id="apidoc.element.glamor.utils.borderStyle">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderStyle
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderStyle(x) {
+  return styleKeyed(&#x27;border&#x27;, &#x27;Style&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderTopRadius" id="apidoc.element.glamor.utils.borderTopRadius">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderTopRadius
+        <span class="apidocSignatureSpan">(r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderTopRadius(r) {
+  return {
+    borderTopLeftRadius: r,
+    borderTopRightRadius: r
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.borderWidth" id="apidoc.element.glamor.utils.borderWidth">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>borderWidth
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function borderWidth(x) {
+  return styleKeyed(&#x27;border&#x27;, &#x27;Width&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.center" id="apidoc.element.glamor.utils.center">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>center
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function center() {
+  return {
+    position: &#x27;absolute&#x27;,
+    top: &#x27;50%&#x27;,
+    left: &#x27;50%&#x27;,
+    transform: &#x27;translate(-50%, -50%)&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.centerBlock" id="apidoc.element.glamor.utils.centerBlock">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>centerBlock
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function centerBlock() {
+  return {
+    display: &#x27;block&#x27;,
+    marginLeft: &#x27;auto&#x27;,
+    marginRight: &#x27;auto&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.circle" id="apidoc.element.glamor.utils.circle">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>circle
+        <span class="apidocSignatureSpan">(radius)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function circle(radius) {
+  var color = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : &#x27;transparent&#x27;;
+
+  return {
+    height: radius,
+    width: radius,
+    borderRadius: &#x27;50%&#x27;,
+    backgroundColor: color
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.clearfix" id="apidoc.element.glamor.utils.clearfix">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>clearfix
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clearfix() {
+  return (0, _index.after)({
+    content: &#x27;&#x22;&#x22;&#x27;,
+    display: &#x27;block&#x27;,
+    clear: &#x27;both&#x27;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.hideVisually" id="apidoc.element.glamor.utils.hideVisually">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>hideVisually
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hideVisually() {
+  return {
+    position: &#x27;absolute&#x27;,
+    width: 1,
+    height: 1,
+    padding: 0,
+    margin: -1,
+    overflow: &#x27;hidden&#x27;,
+    clip: &#x27;rect(0, 0, 0, 0)&#x27;,
+    border: 0
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.hr" id="apidoc.element.glamor.utils.hr">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>hr
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hr() {
+  var color = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : &#x27;#ccc&#x27;;
+  var verticalMargin = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : &#x27;1em&#x27;;
+
+  return {
+    height: 1,
+    border: 0,
+    borderTop: &#x27;1px solid &#x27; + color,
+    margin: verticalMargin + &#x27; 0&#x27;,
+    display: &#x27;block&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.margin" id="apidoc.element.glamor.utils.margin">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>margin
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function margin(x) {
+  return styleKeyed(&#x27;margin&#x27;, &#x27;&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.noHover" id="apidoc.element.glamor.utils.noHover">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>noHover
+        <span class="apidocSignatureSpan">(childSelector, style)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noHover(childSelector, style) {
+  return parent(childSelector, &#x27;.no-hover&#x27;, style);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.noJs" id="apidoc.element.glamor.utils.noJs">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>noJs
+        <span class="apidocSignatureSpan">(childSelector, style)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noJs(childSelector, style) {
+  return parent(childSelector, &#x27;.no-js&#x27;, style);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.padding" id="apidoc.element.glamor.utils.padding">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>padding
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function padding(x) {
+  return styleKeyed(&#x27;padding&#x27;, &#x27;&#x27;, x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.position" id="apidoc.element.glamor.utils.position">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>position
+        <span class="apidocSignatureSpan">(type, _ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function position(type, _ref2) {
+  var top = _ref2.top,
+      left = _ref2.left,
+      bottom = _ref2.bottom,
+      right = _ref2.right;
+
+  var o = {
+    position: type
+  };
+  if (top != undefined) {
+    o.top = top;
+  }
+  if (right != undefined) {
+    o.right = right;
+  }
+  if (bottom != undefined) {
+    o.bottom = bottom;
+  }
+  if (left != undefined) {
+    o.left = left;
+  }
+  return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.resetList" id="apidoc.element.glamor.utils.resetList">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>resetList
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetList() {
+  return (0, _index.merge)({
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0
+  }, (0, _index.select)(&#x27;li&#x27;, {
+    listStyle: &#x27;none&#x27;
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.resetText" id="apidoc.element.glamor.utils.resetText">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>resetText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetText() {
+  return {
+    fontFamily: &#x27;sans-serif&#x27;,
+    fontStyle: &#x27;normal&#x27;,
+    fontWeight: &#x27;normal&#x27;,
+    letterSpacing: &#x27;normal&#x27;,
+    lineBreak: &#x27;auto&#x27;,
+    lineHeight: &#x27;1.5&#x27;,
+    textAlign: [&#x27;left&#x27;, &#x27;start&#x27;],
+    textDecoration: &#x27;none&#x27;,
+    textShadow: &#x27;none&#x27;,
+    textTransform: &#x27;none&#x27;,
+    whiteSpace: &#x27;normal&#x27;,
+    wordBreak: &#x27;normal&#x27;,
+    wordSpacing: &#x27;normal&#x27;,
+    wordWrap: &#x27;normal&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.size" id="apidoc.element.glamor.utils.size">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>size
+        <span class="apidocSignatureSpan">(width)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function size(width) {
+  var height = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : width;
+
+  return {
+    width: width,
+    height: height
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.textHide" id="apidoc.element.glamor.utils.textHide">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>textHide
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function textHide() {
+  var alternative = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : false;
+
+  if (!alternative) {
+    return {
+      font: &#x27;&#x22;0/0&#x22; a&#x27;,
+      color: &#x27;transparent&#x27;,
+      textShadow: &#x27;none&#x27;,
+      backgroundColor: &#x27;transparent&#x27;,
+      border: 0
+    };
+  }
+  return {
+    overflow: &#x27;hidden&#x27;,
+    textIndent: &#x27;101%&#x27;,
+    whiteSpace: &#x27;nowrap&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.triangle" id="apidoc.element.glamor.utils.triangle">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>triangle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function triangle() {
+  var size = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : 12;
+  var color = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : &#x27;#ccc&#x27;;
+  var orientation = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : &#x27;down&#x27;;
+
+  // let border
+  var border = function (dir) {
+    switch (dir) {
+      case &#x27;down&#x27;:
+        return [true, &#x27;t&#x27;, false, &#x27;t&#x27;];
+      case &#x27;up&#x27;:
+        return [false, &#x27;t&#x27;, true, &#x27;t&#x27;];
+      case &#x27;left&#x27;:
+        return [&#x27;t&#x27;, true, &#x27;t&#x27;, false];
+      case &#x27;right&#x27;:
+        return [&#x27;t&#x27;, false, &#x27;t&#x27;, true];
+      case &#x27;up-right&#x27;:
+        return [true, false, false, &#x27;t&#x27;];
+      case &#x27;up-left&#x27;:
+        return [true, &#x27;t&#x27;, false, false];
+      case &#x27;down-right&#x27;:
+        return [false, false, true, &#x27;t&#x27;];
+      case &#x27;down-left&#x27;:
+        return [false, &#x27;t&#x27;, true, false];
+      default:
+        throw new Error(&#x27;Circle orientation is not valid.&#x27;);
+    }
+  }(orientation);
+
+  var o = {
+    height: 0,
+    width: 0
+  };
+  if (border[0] === true) {
+    o.borderTop = size + &#x27; solid &#x27; + color;
+  }
+  if (border[1] === true) {
+    // right
+    o.borderRight = size + &#x27; solid &#x27; + color;
+  }
+
+  if (border[2] === true) {
+    // bottom
+    o.borderBottom = size + &#x27; solid &#x27; + color;
+  }
+
+  if (border[3] === true) {
+    // left
+    o.borderLeft = size + &#x27; solid &#x27; + color;
+  }
+  if (border[0] === &#x27;t&#x27;) {
+    // top
+    o.borderTop = size + &#x27; solid transparent&#x27;;
+  }
+
+  if (border[1] === &#x27;t&#x27;) {
+    // right
+    o.borderRight = size + &#x27; solid transparent&#x27;;
+  }
+
+  if (border[2] === &#x27;t&#x27;) {
+    // bottom
+    o.borderBottom = size + &#x27; solid transparent&#x27;;
+  }
+
+  if (border[3] === &#x27;t&#x27;) {
+    // left
+    o.borderLeft = size + &#x27; solid transparent&#x27;;
+  }
+
+  return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.truncate" id="apidoc.element.glamor.utils.truncate">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>truncate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function truncate() {
+  var lines = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : 0;
+  var lineHeight = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : 1;
+  var textOverflow = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : &#x27;ellipsis&#x27;;
+
+  if (!lines) {
+    return {
+      whiteSpace: &#x27;nowrap&#x27;,
+      overflow: &#x27;hidden&#x27;,
+      textOverflow: textOverflow
+    };
+  }
+
+  var height = Math.round(lineHeight * lines * 100) / 100;
+
+  return {
+    display: [&#x27;block&#x27;, &#x27;-webkit-box&#x27;],
+    height: height + &#x27;em&#x27;,
+    lineHeight: lineHeight,
+    WebkitLineClamp: lines,
+    WebkitBoxOrient: &#x27;vertical&#x27;,
+    overflow: &#x27;hidden&#x27;,
+    textOverflow: textOverflow
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.glamor.utils.wordWrap" id="apidoc.element.glamor.utils.wordWrap">
+        function <span class="apidocSignatureSpan">glamor.utils.</span>wordWrap
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wordWrap() {
+  var wrap = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : &#x27;break-word&#x27;;
+  var wordBreak = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : wrap !== &#x27;break-word&#x27; ? wrap : &#x27;break-all&#x27;;
+
+  return {
+    overflowWrap: wrap,
+    wordBreak: wordBreak,
+    wordWrap: wrap
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
